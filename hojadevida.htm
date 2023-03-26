@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO HOJA DE VIDA</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body><center>
+    <!--ENCABEZADO-->
+    <section>
+        <table id="encabezado" cellpadding="10">
+            <tr>
+                <td><img src="img/escudo_de_colombia.jpg" alt="Escudo de Colombia" width="150"></td>
+                <td class="texto_encabezado">
+                    <div><font size="3">FORMATO ÚNICO</font></div>
+                    <div><b><font size="5">HOJA DE VIDA</font></b></div>
+                    <div><font size="2">Persona Natural</font></div>
+                    <div><font size="1">(Leyes 190 de 1995, 489 y 443 de 1998)</font></div>
+                </td>
+                <td>
+                    <p><i><font size="1">ENTIDAD RECEPTORA</font></i></p>
+                    <input type="text" name="entidad_receptora" size="20">
+                </td>
+            </tr>
+        </table>
+    </section>
+    <br>
+    <!--DATOS PERSONALES-->
+    <div id="texto_datos">
+        <font class="numero"><b>1</b></font>
+        <div class="linea_azul"></div>
+        <font size="2" class="item"><b>DATOS PERSONALES</b></font>
+    </div>
+    <br>
+    <section>
+        <table id="datos_personales" border="1" cellpadding="10">
+            <tr>
+                <td><font size="1"><i>PRIMER APELLIDO</i></font>
+                    <input type="text" name="apellido1" id="apellido1"></td>
+                <td colspan="2"><font size="1"><i>SEGUNDO APELLIDO ( O DE CASADA )</i></font>
+                    <input type="text" name="apellido2" id="apellido2"></td>
+                <td colspan="2"><font size="1"><i>NOMBRES</i></font>
+                    <input type="text" name="nombre" id="nombre"></td>
+            </tr>
+            <tr>
+                <td>
+                    <font size="1"><i>DOCUMENTO DE IDENTIFICACIÓN</i></font><br>
+                    <font size="1"><i>C.C</i></font><input type="radio" name="id" id="cc">
+                    <font size="1"><i>C.E</i></font><input type="radio" name="id" id="ce">
+                    <font size="1"><i>PAS</i></font><input type="radio" name="id" id="pas">
+                    <font size="1"><i>No. </i></font><input type="text" name="no" id="no" size="6">
+                </td>
+                <td>
+                    <font size="1"><i>SEXO</i></font><br>
+                    <font size="1"><i>F</i></font><input type="radio" name="sexo" id="f">
+                    <font size="1"><i>M</i></font><input type="radio" name="sexo" id="m">
+                </td>
+                <td>
+                    <font size="1"><i>NACIONALIDAD</i></font><br>
+                    <font size="1"><i>COL</i></font><input type="radio" name="nac" id="col">
+                    <font size="1"><i>EXTRANJERO</i></font><input type="radio" name="nac" id="ex">
+                </td>
+                <td>
+                    <font size="1"><i>PAIS</i></font><br>
+                    <input type="text" name="pais" id="pais">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <font size="1"><i>LIBRETA MILITAR</i></font><br>
+                    <div align="center">
+                        <font size="1"><i>PRIMERA CLASE </i></font><input type="radio" name="lm" id="pc">
+                        <font size="1"><i>&nbsp SEGUNDA CLASE </i></font><input type="radio" name="lm" id="sc">
+                        <font size="1"><i>&nbsp NÚMERO   </i></font><input type="text" name="num" id="num">
+                        <font size="1"><i>&nbsp D.M   </i></font><input type="text" name="dm" id="dm">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <font size="1"><i>FECHA Y LUGAR DE NACIMIENTO</i></font><br>
+                    <font size="1">FECHA PAÍS &nbsp</font>
+                    <font size="1">DÍA </font><input type="text" name="dia" id="dia" size="2">
+                    <font size="1">MES </font><input type="text" name="mes" id="mes" size="2">
+                    <font size="1">AÑO </font><input type="text" name="año" id="año" size="4"><br><br>
+                    <font size="1">DEPTO &nbsp &nbsp &nbsp</font>
+                    <input type="text" name="depto" id="depto" size="40"><br><br>
+                    <font size="1">MUNICIPIO </font>
+                    <input type="text" name="muncp" id="muncp" size="40">
+                </td>
+                <td colspan="2">
+                    <font size="1"><i>DIRECCIÓN DE CORRESPONDENCIA</i></font><br>
+                    <input type="text" name="direccion" id="direccion" size="40"><br><br>
+                    <font size="1">PAÍS &nbsp</font>
+                    <input type="text" name="pais2" id="pais2" size="20">
+                    <font size="1">DEPTO &nbsp</font>
+                    <input type="text" name="depto2" id="depto2" size="20"><br><br>
+                    <font size="1">MUNICIPIO </font>
+                    <input type="text" name="muncp2" id="muncp2" size="40"><br><br>
+                    <font size="1">TELÉFONO </font>
+                    <input type="text" name="telefono" id="telefono" size="15">
+                    <font size="1">&nbsp EMAIL </font>
+                    <input type="email" name="email" id="email" size="15">
+                </td>
+            </tr>
+        </table>
+    </section>
+    <br>
+    <!--FORMACIÓN ACADÉMICA-->
+    <div id="texto_datos">
+        <font class="numero"><b>2</b></font>
+        <div class="linea_azul"></div>
+        <font size="2" class="item"><b>FORMACIÓN ACADÉMICA</b></font>
+    </div>
+    <br>
+    <section>
+        <table id="formacion_academica" border="1" cellpadding="10">
+            <tr>
+                <td>
+                    <font size="1"><i><b>EDUCACIÓN BÁSICA Y MEDIA</b></i></font><br>
+                    <font size="1">MARQUE CON UNA X EL ÚLTIMO GRADO APROBADO ( LOS GRADOS
+                        1o. A 6o. DE BACHILLERATO EQUIVALEN A LOS GRADO DE 6o. A 11o. DE
+                        EDUCACIÓN BÁSICA SECUNDARIA Y MEDIA )</font><br><br>
+                        <table class="educacion" border="1" cellpadding="8" align="center">
+                            <tr>
+                                <td colspan="11"><font size="1"><i>EDUCACIÓN BÁSICA</i></font></td>
+                                <td><font size="1"><i>TÍTULO OBTENIDO: </i></font></td>
+                            </tr>
+                            <tr>
+                                <div align="center">
+                                    <td colspan="5"><font size="1"><i>PRIMARIA</i></font></td>
+                                    <td colspan="4"><font size="1"><i>SECUNDARIA</i></font></td>
+                                    <td colspan="2"><font size="1"><i>MEDIA</i></font></td>
+                                </div>
+                                    <td><font size="1"><i>FECHA DE GRADO</i></font></td>
+                            </tr>
+                            <tr align="center">
+                                <td><font size="1">1o.</font></td>
+                                <td><font size="1">2o.</font></td>
+                                <td><font size="1">3o.</font></td>
+                                <td><font size="1">4o.</font></td>
+                                <td><font size="1">5o.</font></td>
+                                <td><font size="1">6o.</font></td>
+                                <td><font size="1">7o.</font></td>
+                                <td><font size="1">8o.</font></td>
+                                <td><font size="1">9o.</font></td>
+                                <td><font size="1">10</font></td>
+                                <td><font size="1">11</font></td>
+                                <td>
+                                    <font size="1">MES &nbsp</font><input type="text" name="mes2" id="mes2" size="2">
+                                    <font size="1">&nbsp AÑO &nbsp</font><input type="text" name="año2" id="año2" size="4">
+                                </td>
+                            </tr>
+                        </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11">
+                    <font size="1"><i><b>EDUCACIÓN SUPERIOR (PREGRADO Y POSTGRADO)</b></i></font><br>
+                    <font size="1">DILIGENCIE ESTE PUNTO EN ESTRICTO ORDEN CRONOLÓGICO, EN MODALIDAD ACADÉMICA ESCRIBA: </font><br>
+                    <table cellpadding="5">
+                        <tr>
+                            <td><font size="1"><b>TC </b>(TÉCNICA),</font></td>
+                            <td><font size="1"><b>TL </b>(TECNOLÓGICA),</font></td>
+                            <td><font size="1"><b>TE </b>(TECNOLÓGICA ESPECIALIZADA),</font></td>
+                            <td><font size="1"><b>UN </b>(UNIVERSITARIA),</font></td>
+                        </tr>
+                        <tr>
+                            <td><font size="1"><b>ES </b>(ESPECIALIZACIÓN),</font></td>
+                            <td><font size="1"><b>MG </b>(MAESTRÍA O MAGISTER),</font></td>
+                            <td><font size="1"><b>DOC </b>(DOCTORADO O PHD),</font></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <font size="1">RELACIONE AL FRENTE EL NÚMERO DE LA TARJETA PROFESIONAL 
+                        (SI ÉSTA HA SIDO PREVISTA EN UNA LEY).</font>
+                </td>
+            </tr>
+            <tr>
+                <table border="1" cellpadding="10" class="modalidad">
+                    <tr align="center">
+                        <td><font size="1"><i>MODALIDAD</i></font></td>
+                        <td><font size="1"><i>No. SEMESTRES</i></font></td>
+                        <td colspan="2"><font size="1"><i>GRADUADO</i></font></td>
+                        <td><font size="1"><i>NOMBRE DE LOS ESTUDIOS</i></font></td>
+                        <td colspan="5"><font size="1"><i>TERMINACIÓN</i></font></td>
+                        <td><font size="1"><i>No. DE TARJETA</i></font></td>
+                    </tr>
+                    <tr align="center">
+                        <td><font size="1"><i>ACADÉMICA</i></font></td>
+                        <td><font size="1"><i>APROBADOS</i></font></td>
+                        <td><font size="1"><i>SI</i></font></td>
+                        <td><font size="1"><i>NO</i></font></td>
+                        <td><font size="1"><i>O TÍTULO OBTENIDO</i></font></td>
+                        <td><font size="1"><i>MES</i></font></td>
+                        <td colspan="4"><font size="1"><i>AÑO</i></font></td>
+                        <td><font size="1"><i>PROFESIONAL</i></font></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </tr>
+            <tr>
+                <td colspan="11">
+                    <font size="1">ESPECIFIQUE LOS IDIOMAS DIFERENTES AL ESPAÑOL QUE:
+                    HABLA, LEE, ESCRIBE DE FORMA, REGULAR (<b>R</b>),
+                    BIEN (<b>B</b>) O MUY BIEN (<b>MB</b>).</font><br>
+                    <table class="idioma" cellpadding="8" border="1" align="center">
+                        <tr align="center">
+                            <td><font size="1"><i>IDIOMA</i></font></td>
+                            <td colspan="3"><font size="1"><i>LO HABLA</i></font></td>
+                            <td colspan="3"><font size="1"><i>LO LEE</i></font></td>
+                            <td colspan="3"><font size="1"><i>LO ESCRIBE</i></font></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><font size="1"><i>R</i></font></td>
+                            <td><font size="1"><i>B</i></font></td>
+                            <td><font size="1"><i>MB</i></font></td>
+                            <td><font size="1"><i>R</i></font></td>
+                            <td><font size="1"><i>B</i></font></td>
+                            <td><font size="1"><i>MB</i></font></td>
+                            <td><font size="1"><i>R</i></font></td>
+                            <td><font size="1"><i>B</i></font></td>
+                            <td><font size="1"><i>MB</i></font></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </section>
+</center></body>
+</html>
